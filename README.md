@@ -15,10 +15,10 @@ void setup() {
 }
 
 void loop() {
-  for (float i = 0; i < 360 ; i = i + 2) {
-    Serial.print(sin(i * (PI / 180.00)));
+  for (float i = 0; i < 360 ; i = i + 2) {  //تعیین طول موج
+    Serial.print(sin(i * (PI / 180.00))); //چاپ کردن موج های سینوس
     Serial.print(" ");
-    Serial.println(cos( i * ( PI / 180.00)));
+    Serial.println(cos( i * ( PI / 180.00)));// چاپ کردن موج های کوسینوس
   }
 }
 
